@@ -1,8 +1,8 @@
 # 🚀 Event Bus System | v1.0.0  
-**Lightweight Event System for Unity 6**  
+**Lightweight Event System for Unity**  
 
 [![GitHub release](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/Ohenzy/event-bus-ugl/releases/tag/v1.0.0)
-[![Unity](https://img.shields.io/badge/Unity-6.0+-black.svg?logo=unity)](https://unity.com)
+[![Unity](https://img.shields.io/badge/Unity-black.svg?logo=unity)](https://unity.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
