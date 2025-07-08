@@ -1,5 +1,4 @@
-﻿using System;
-using UGL.Event.Impl;
+﻿using UGL.Event.Impl;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -9,19 +8,19 @@ namespace UGL.Event
     {
         private readonly EventBusImpl _eventBus = new();
 
-        public ISubscriptionBuilder For(Object owner)
+        public ISubscriptionBuilder For(Object subscriber)
         {
-            return _eventBus.For(owner);
+            return _eventBus.For(subscriber);
         }
 
-        public void Invoke<T>(T evt) where T : struct, IEvent
+        public void Invoke<T>(T evt) where T : struct
         {
             _eventBus.Invoke(evt);
         }
 
-        public void Unsubscribe(Object owner)
+        public void Unsubscribe(Object subscriber)
         {
-            _eventBus.Unsubscribe(owner);
+            _eventBus.Unsubscribe(subscriber);
         }
 
         private void OnDestroy()

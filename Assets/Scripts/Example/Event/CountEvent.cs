@@ -1,8 +1,6 @@
-﻿using UGL.Event;
-
-namespace Example
+﻿namespace Example
 {
-    public readonly struct CountEvent : IEvent
+    public readonly struct CountEvent
     {
         public readonly int CountValue;
 

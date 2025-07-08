@@ -4,8 +4,8 @@ namespace UGL.Event
 {
     public interface ISubscriptionBuilder
     {
-        ISubscriptionBuilder Subscribe<T>(UnityAction<T> action) where T : struct, IEvent;
-        
+        ISubscriptionBuilder Subscribe<T>(UnityAction<T> action, byte priority = byte.MaxValue) where T : struct;
+
         void Build();
     }
 }

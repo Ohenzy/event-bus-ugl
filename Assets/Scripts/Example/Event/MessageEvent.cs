@@ -1,8 +1,6 @@
-﻿using UGL.Event;
-
-namespace Example
+﻿namespace Example
 {
-    public readonly struct MessageEvent : IEvent
+    public readonly struct MessageEvent
     {
         public readonly string Message;
 

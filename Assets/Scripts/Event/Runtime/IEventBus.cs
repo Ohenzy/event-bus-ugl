@@ -4,10 +4,10 @@ namespace UGL.Event
 {
     public interface IEventBus
     {
-        ISubscriptionBuilder For(Object owner);
+        ISubscriptionBuilder For(Object subscriber);
 
-        void Unsubscribe(Object owner);
+        void Unsubscribe(Object subscriber);
         
-        void Invoke<T>(T evt) where T : struct, IEvent;
+        void Invoke<T>(T evt) where T : struct;
     } 
 }

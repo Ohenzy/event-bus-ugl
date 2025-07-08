@@ -1,7 +1,7 @@
-# 🚀 Event Bus System | v1.0.0  
+# 🚀 Event Bus System
 **Lightweight Event System for Unity**  
 
-[![GitHub release](https://img.shields.io/badge/version-v1.0.0-blue)](https://github.com/Ohenzy/event-bus-ugl/releases/tag/v1.0.0)
+[![GitHub release](https://img.shields.io/badge/version-v1.1.0-blue)](https://github.com/Ohenzy/event-bus-ugl/releases/tag/v1.1.0)
 [![Unity](https://img.shields.io/badge/Unity-black.svg?logo=unity)](https://unity.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,7 +10,7 @@
 ## 📦 **Installation**  
 ### **Via Git URL (Unity Package Manager)**  
 1. Open **Package Manager** → **Add package from git URL** → Paste:<br>
-   https://github.com/Ohenzy/event-bus-ugl.git?path=/Assets/Scripts/Event/#v1.0.0
+   https://github.com/Ohenzy/event-bus-ugl.git?path=/Assets/Scripts/Event/#v1.1.0
 2. Click **Add**.  
 
 ## 🛠 **Usage**  
@@ -48,7 +48,7 @@
         }
     }
 
-    public readonly struct MessageEvent : IEvent
+    public readonly struct MessageEvent
     {
         public readonly string Message;
 
