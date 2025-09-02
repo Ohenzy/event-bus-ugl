@@ -6,6 +6,6 @@ namespace UGL.Event
     {
         ISubscriptionBuilder Subscribe<T>(UnityAction<T> action, byte priority = byte.MaxValue) where T : struct;
 
-        void Build();
+        IEventBus Build();
     }
 }

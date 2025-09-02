@@ -1,7 +1,7 @@
 # 🚀 Event Bus System
 **Lightweight Event System for Unity**  
 
-[![GitHub release](https://img.shields.io/badge/version-v1.1.0-blue)](https://github.com/Ohenzy/event-bus-ugl/releases/tag/v1.1.0)
+[![GitHub release](https://img.shields.io/badge/version-v1.2.0-blue)](https://github.com/Ohenzy/event-bus-ugl/releases/tag/v1.2.0)
 [![Unity](https://img.shields.io/badge/Unity-black.svg?logo=unity)](https://unity.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -10,7 +10,9 @@
 ## 📦 **Installation**  
 ### **Via Git URL (Unity Package Manager)**  
 1. Open **Package Manager** → **Add package from git URL** → Paste:<br>
-   https://github.com/Ohenzy/event-bus-ugl.git?path=/Assets/Scripts/Event/#v1.1.0
+```md
+https://github.com/Ohenzy/event-bus-ugl.git?path=/Assets/Scripts/Event/#v1.2.0
+```
 2. Click **Add**.  
 
 ## 🛠 **Usage**  
@@ -22,7 +24,7 @@
 
         private void Awake()
         {
-            _eventBus.For(this)
+            _eventBus = GetComponent<IEventBus>().For(this)
                 .Subscribe(new UnityAction<MessageEvent>(OnPrintMessage))
                 .Build();
         }

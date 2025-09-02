@@ -29,9 +29,10 @@ namespace UGL.Event.Impl
             return this;
         }
 
-        public void Build()
+        public IEventBus Build()
         {
             _eventBus.AddActions(_subscriber, _actions);
+            return _eventBus;
         }
     }
 }
